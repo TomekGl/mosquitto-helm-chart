@@ -13,6 +13,9 @@ metadata:
   {{- end }}
 spec:
   type: {{ .Values.service.mqtt.type }}
+  {{- if .Values.service.mqtt.loadBalancerIP }}
+  loadBalancerIP: {{ .Values.service.mqtt.loadBalancerIP }}
+  {{- end }}
   ports:
     {{- if .Values.listeners.mqtt.enabled }}
     - port: {{ .Values.listeners.mqtt.port }}
@@ -44,6 +47,9 @@ metadata:
   {{- end }}
 spec:
   type: {{ .Values.service.websocket.type }}
+  {{- if .Values.service.websocket.loadBalancerIP }}
+  loadBalancerIP: {{ .Values.service.websocket.loadBalancerIP }}
+  {{- end }}
   ports:
     - port: {{ .Values.listeners.websocket.port }}
       targetPort: mqtt-ws

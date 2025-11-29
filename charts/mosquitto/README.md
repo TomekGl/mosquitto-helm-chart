@@ -125,12 +125,14 @@ This chart creates **separate services** for different protocols to optimize net
 | -------- | ----------- | ------- |
 | `service.mqtt.type` | MQTT service type (ClusterIP/LoadBalancer/NodePort) | `LoadBalancer` |
 | `service.mqtt.annotations` | MQTT service annotations (for load balancer config) | `{}` |
+| `service.mqtt.loadBalancerIP` | MQTT service IP (for load balancer config) | `{}` |
 
 #### WebSocket Service Configuration
 | Property | Description | Default |
 | -------- | ----------- | ------- |
 | `service.websocket.type` | WebSocket service type (ClusterIP/LoadBalancer/NodePort) | `ClusterIP` |
 | `service.websocket.annotations` | WebSocket service annotations (for ingress/monitoring) | `{}` |
+| `service.websocket.loadBalancerIP` | WebSocket service IP (for ingress/monitoring) | `{}` |
 
 **Service Architecture:**
 - **`mosquitto-mqtt`** service: Handles ports 1883 (MQTT) and 8883 (MQTT TLS) for direct client connections

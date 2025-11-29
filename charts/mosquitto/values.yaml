@@ -150,6 +150,7 @@ service:
     #   cloud.google.com/load-balancer-type: "External"
     #   # MetalLB for MQTT
     #   metallb.universe.tf/address-pool: "production-public-ips"
+    # loadBalancerIP: 1.2.3.4
 
   # WebSocket Service (for MQTT over WebSocket 9001)
   # Uses ClusterIP when ingress enabled, LoadBalancer for direct access
@@ -162,6 +163,7 @@ service:
     #   prometheus.io/port: "9001"
     #   # Istio service mesh for WebSocket
     #   traffic.sidecar.istio.io/includeInboundPorts: "9001"
+    # loadBalancerIP: 1.2.3.4
 
 # Resource limits and requests (recommended for production)
 resources: {}
