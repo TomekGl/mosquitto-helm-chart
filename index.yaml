@@ -3,6 +3,16 @@ entries:
   mosquitto:
   - apiVersion: v2
     appVersion: 2.0.22
+    created: "2025-11-29T13:46:12.599453476Z"
+    description: A Helm chart for Eclipse Mosquitto
+    digest: a6073f13bb697fdc5a31fe73fc119ee29c8c47707305c04092643778b893b99c
+    name: mosquitto
+    type: application
+    urls:
+    - https://github.com/TomekGl/mosquitto-helm-chart/releases/download/mosquitto-1.1.0/mosquitto-1.1.0.tgz
+    version: 1.1.0
+  - apiVersion: v2
+    appVersion: 2.0.22
     created: "2025-11-29T12:34:33.454750034Z"
     description: A Helm chart for Eclipse Mosquitto
     digest: 1c5d0d55234aca8a988e17399361bc6263033d14100014dfb52975af08c5a15b
@@ -21,4 +31,4 @@ entries:
     urls:
     - https://github.com/TomekGl/mosquitto-helm-chart/releases/download/mosquitto-1.0.0/mosquitto-1.0.0.tgz
     version: 1.0.0
-generated: "2025-11-29T12:34:33.45475848Z"
+generated: "2025-11-29T13:46:12.599465589Z"
